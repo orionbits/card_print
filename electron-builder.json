@@ -1,0 +1,24 @@
+﻿{
+  "appId": "com.amcomp.app",
+  "productName": "AM Comp",
+  "copyright": "Open Source",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "main.js",
+    "preload.js",
+    "dist/**/*",
+    "node_modules/**/*"
+  ],
+  "win": {
+    "target": ["nsis"],
+    "icon": "dist/web/favicon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}
